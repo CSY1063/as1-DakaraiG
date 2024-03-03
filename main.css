@@ -1,0 +1,25 @@
+body {
+  overflow: hidden;
+}
+
+p {
+  float: left;
+  width: 100%;
+  padding: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: var(--md-sys-color-on-background);
+  /* allows link text to trasistion to a different colour on hover  */
+  -moz-transition: all .1.5s ease-in;
+  -o-transition: all .1.5s ease-in;
+  -webkit-transition: all .1.5s ease-in;
+  transition: all .1.5s ease-in;
+}
+/* changes colour of link text on hover  */
+a:hover {
+  color: var(--md-sys-color-surface-tint);
+}
+
+

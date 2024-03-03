@@ -13,9 +13,6 @@
     --md-sys-typescale-title-font: var(--my-title-font);
 }
 
-
-
-
 .primary {
     background: var(--md-sys-color-primary);
     color: var(--md-sys-color-on-primary);
@@ -70,3 +67,29 @@ body {
     font-family: 'Open Sans', sans-serif;
 
 }
+
+::-webkit-scrollbar {
+    width: 10px;
+    overflow: hidden;
+   
+    border-radius: 25px;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: var(--md-sys-color-primary);
+    border-radius: 25px;
+    overflow: hidden;
+  }
+  .item-1 { 
+    background-color: var(--md-sys-color-surface-container);
+    color: var(--md-sys-color-primary);
+   }
+  
+  .item-2 { 
+    background-color: var(--md-sys-color-surface-container);
+  }
+  
+  .item-3 { 
+    background-color: var(--md-sys-color-background);
+  }
