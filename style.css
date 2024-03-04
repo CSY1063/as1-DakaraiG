@@ -43,12 +43,12 @@ a:hover {
   grid-template-rows: 0.3fr 1.7fr 1fr; 
   gap: 0px 0px; 
 }
-.item-2 { grid-area: 2 / 1 / 4 / 2; }
-.item-1 { grid-area: 1 / 1 / 2 / 3; }
-.item-3 { grid-area: 2 / 2 / 4 / 3; }
+header { grid-area: 1 / 1 / 2 / 3; }
+nav { grid-area: 2 / 1 / 4 / 2; }
+main { grid-area: 2 / 2 / 4 / 3; }
 
 
-.item-1 { 
+header { 
   background-color: var(--md-sys-color-surface-container);
   height: 70px;
   width: 100%;
@@ -57,7 +57,7 @@ a:hover {
   padding-left: 40px;
  }
 
-.item-2 { 
+nav { 
   padding-top: 30px;
   display: flex;
   flex-direction: column;
@@ -68,7 +68,7 @@ a:hover {
   
 }
 
-.item-3 { 
+main { 
   background-color: var(--md-sys-color-background);
   border-radius: 25px;
   padding: 20px;
