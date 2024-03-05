@@ -81,15 +81,15 @@ body {
     border-radius: 25px;
     overflow: hidden;
   }
-  .item-1 { 
+  header { 
     background-color: var(--md-sys-color-surface-container);
     color: var(--md-sys-color-primary);
    }
   
-  .item-2 { 
+  nav { 
     background-color: var(--md-sys-color-surface-container);
   }
   
-  .item-3 { 
+  main { 
     background-color: var(--md-sys-color-background);
   }
