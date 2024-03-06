@@ -1,24 +1,47 @@
 .container {
-    display: grid; 
-    grid-template-columns: 1fr;
-    grid-template-rows: 0.3fr 1.7fr 1fr; 
-    gap: 0px 0px;
-    grid-template-areas:
-      "header"
-      "nav"
-      "main"
-      "main"
-      ;
-  }
-  
-header { 
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.3fr 1.7fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "header"
+    "nav"
+    "main"
+    "main"
+  ;
+}
+
+header {
   height: 70px;
   width: 100%;
-  justify-content: center;
+  justify-content: start;
+  display: flex;
+  flex-direction: row;
   padding: 40px;
-  }
+  gap: 20px;
+}
 
-nav { 
+.showNav {
+  height: 0.8em;
+  width: 1.25em;
+  border-top: 0.2em solid var(--md-sys-color-primary);
+  border-bottom: 0.2em solid var(--md-sys-color-primary);
+  border-radius: 0.2em;
+  margin-top: 35px;
+
+}
+
+.showNav::before {
+  content: '';
+  width: 1.25em;
+  margin-top: 0.3em;
+  border-top: 0.2em solid var(--md-sys-color-primary);
+  position : absolute;
+  border-radius: 0.2em;
+
+}
+
+nav {
   padding-top: 30px;
   display: flex;
   flex-direction: column;
@@ -26,10 +49,12 @@ nav {
   padding-left: 30px;
   gap: 2em;
   padding-bottom: 30px;
-  
+
 }
 
-main { 
+
+
+main {
   border-radius: 25px;
   padding: 20px;
   max-width: 1760px;
@@ -38,7 +63,5 @@ main {
   width: 90%;
   height: 95%;
   padding: 30px;
-  margin: 30px;
   /* margin: 0 auto; */
 }
-
