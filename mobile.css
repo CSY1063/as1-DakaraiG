@@ -3,27 +3,36 @@
   grid-template-columns: 1fr;
   grid-template-rows: 0.3fr 1.7fr 1fr;
   gap: 0px 0px;
-  grid-template-areas:
-    "header"
-    "nav"
-    "main"
-    "main"
-  ;
 }
 
 header {
-  height: 70px;
+  grid-area: 1 / 1 / 2 / 2;
+}
+
+main {
+  grid-area: 2 / 1 / 4 / 2;
+}
+
+nav {
+  grid-area: 2 / 1 / 4 / 2;
+}
+
+header {
+  height: 50px;
   width: 100%;
   justify-content: start;
   display: flex;
   flex-direction: row;
-  padding: 40px;
+  padding-left: 35px;
+  padding-top: 7px;
+  padding-bottom: 7px;
   gap: 20px;
 }
 
 .showNav {
   height: 0.8em;
   width: 1.25em;
+  display: block;
   border-top: 0.2em solid var(--md-sys-color-primary);
   border-bottom: 0.2em solid var(--md-sys-color-primary);
   border-radius: 0.2em;
@@ -36,7 +45,7 @@ header {
   width: 1.25em;
   margin-top: 0.3em;
   border-top: 0.2em solid var(--md-sys-color-primary);
-  position : absolute;
+  position: absolute;
   border-radius: 0.2em;
 
 }
@@ -49,6 +58,14 @@ nav {
   padding-left: 30px;
   gap: 2em;
   padding-bottom: 30px;
+  top: 0;
+  background-color: yellow;
+  position: relative;
+  z-index: 1;
+  width: 300px;
+  height: 100%;
+  border-radius: 0px 25px 25px 0px;
+  background-color: var(--md-sys-color-surface-variant);
 
 }
 
@@ -63,5 +80,20 @@ main {
   width: 90%;
   height: 95%;
   padding: 30px;
+
   /* margin: 0 auto; */
 }
+
+#nav {
+  display: none;
+}
+#showNav:target #nav {
+  display: flex;
+}
+#showNav:target #showNav {
+  display: none;
+  
+}
+
+
+
