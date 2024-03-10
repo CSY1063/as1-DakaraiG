@@ -48,3 +48,6 @@ main {
   margin: 30px;
 }
   
+#nav {
+  display: flex !important;
+}

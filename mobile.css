@@ -1,7 +1,7 @@
 .container {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 0.3fr 1.7fr 1fr;
+  grid-template-rows: 0.2fr 1.8fr 1fr;
   gap: 0px 0px;
 }
 
@@ -18,14 +18,18 @@ nav {
 }
 
 header {
-  height: 50px;
+  height: 30px;
   width: 100%;
   justify-content: start;
   display: flex;
   flex-direction: row;
-  padding-left: 35px;
+  padding: 12px 12px;
+  align-items: center;;
+
+  /* padding-left: 35px;
   padding-top: 7px;
   padding-bottom: 7px;
+  margin-bottom: 25px; */
   gap: 20px;
 }
 
@@ -36,8 +40,9 @@ header {
   border-top: 0.2em solid var(--md-sys-color-primary);
   border-bottom: 0.2em solid var(--md-sys-color-primary);
   border-radius: 0.2em;
-  margin-top: 35px;
-
+  align-self: center;
+  margin: 10px 0px 0px 10px;
+  cursor: pointer;
 }
 
 .showNav::before {
@@ -59,7 +64,6 @@ nav {
   gap: 2em;
   padding-bottom: 30px;
   top: 0;
-  background-color: yellow;
   position: relative;
   z-index: 1;
   width: 300px;
@@ -87,6 +91,8 @@ main {
 #nav {
   display: none;
 }
+
+/* 
 #showNav:target #nav {
   display: flex;
 }
@@ -95,5 +101,5 @@ main {
   
 }
 
-
+ */
 

@@ -60,11 +60,19 @@
     --md-sys-color-on-error-container: #ffdad6;
 }
 
+
+h1 {
+    font-weight: 450;
+    font-family: 'Google Sans', Roboto, system-ui;
+}
+
+
 body {
     /*background-color: var(-md-sys-color-background);*/
     background-color: var(--md-sys-color-surface-container);
     color: var(--md-sys-color-on-background);
-    font-family: 'Open Sans', sans-serif;
+    /* font-family: 'Open Sans', sans-serif; */
+    font-family: 'Google Sans', Roboto, system-ui;
 
 }
 
