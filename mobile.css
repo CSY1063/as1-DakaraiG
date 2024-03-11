@@ -1,7 +1,7 @@
 .container {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 0.1fr 1.8fr;
+  grid-template-rows: 0.146fr 1.8fr;
   gap: 0px 0px;
 }
 
@@ -26,10 +26,6 @@ header {
   padding: 13px 12px;
   align-items: center;;
 
-  /* padding-left: 35px;
-  padding-top: 7px;
-  padding-bottom: 7px;
-  margin-bottom: 25px; */
   gap: 20px;
 }
 
