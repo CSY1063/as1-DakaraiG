@@ -1,9 +1,12 @@
 function ShowNav(){
-  var x = document.getElementById("nav");
-  if (x.style.display != "flex") {
-    x.style.display = "flex";
+  var nav = document.getElementById("nav");
+  var bg = document.getElementById("navbg");
+  if (nav.style.display != "flex") {
+    nav.style.display = "flex";
+    bg.style.display = "block";
   } else {
-    x.style.display = "none";
+    nav.style.display = "none";
+    bg.style.display = "none";
   }
 }
 
