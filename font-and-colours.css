@@ -20,20 +20,19 @@
 
 
 body {
-    transition: 0.5s cubic-bezier(0.2, 0.0, 0, 1.0);
+   
     /*background-color: var(-md-sys-color-background);*/
     background-color: var(--md-sys-color-surface-container);
     color: var(--md-sys-color-on-background);
     /* font-family: 'Open Sans', sans-serif; */
     font-family: 'Google Sans', Roboto, system-ui;
-    transition: 0.5s cubic-bezier(0.2, 0.0, 0, 1.0);
+   
 }
 
 header { 
     background-color: var(--md-sys-color-surface-container);
     color: var(--md-sys-color-primary);
-    transition: 0.5s cubic-bezier(0.2, 0.0, 0, 1.0);
-    
+   
   }
   
 nav { 

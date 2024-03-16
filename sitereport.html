@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="font-and-colours.css">
+    <link rel="stylesheet" href="main.css" media="screen">
+    <link rel="stylesheet" href="mobile.css" media="screen and (max-width: 600px)">
+    <link rel="stylesheet" href="desktop.css" media="screen and (min-width: 600px)">
+    <script src="main.js"></script>
+
+</head>
+
+<body style>
+    <div class="container" style="overflow: hidden;">
+        <header class="item-1" class="flex-container">
+            <a href="#showNav" class="showNav" onclick="ShowNav()"></a>
+            <h1></a>Report</h1>
+        </header>
+        <navbg id="navbg" class="navbg" onclick="ShowNav()"></navbg>
+        <nav class="nav" id="nav" class="flex-container">
+
+
+            <a href="index.html">Home</a>
+            <a href="contact.html">Contact</a>
+            <a href="project.html">Project</a>
+            <a href="sitereport.html">Site report</a>
+            <a href="videoDemo.html">Video demo</a>
+            <a href="#" onclick="light()">Light</a>
+            <a href="#" onclick="dark()">Dark</a>
+
+        </nav>
+        <main style="overflow-y:scroll; overflow-x: hidden; height: auto; width: auto;">
+            <div class="content" id="content" class="flex-container">
+                <h2>A learning experence</h2>
+
+                <p2>site report</p2>
+
+                <p>This website takes a large amount of inspiration from Google Material Design 3 as I thought it looks
+                    genuinely nice to the eyes and it would also be an extra challenge to create something that lives up
+                    to their design guidelines. <a href="https://m3.material.io/">(https://m3.material.io/)</a></p>
+                <p>I also made use of the Mozilla CSS docs and W3S to help with my coding</p>
+                <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS">(https://developer.mozilla.org/en-US/docs/Web/CSS)</a></p>
+                <p><a href="https://www.w3schools.com/css/default.asp">(https://www.w3schools.com/css/default.asp)</a></p>
+                <p>To begin this site started as a basic form of the lesson site. the colours didn't look very nice, so
+                    I swapped them out for a set of designated variables that correspond to a material pallet. I then
+                    assigned them to the key elements that would be coloured.</p>
+                <p>after that, I decided to get rid of the aside and footer as they cluttered up the homepage. plus,
+                    they could just be made into an extra page.
+                    next, I got a rough feel of the grid I would need by using <a href="https://grid.layoutit.com/">(https://grid.layoutit.com/)</a> this allowed
+                    me to properly visualise how the grid would look on the home page.
+                </p>
+                <p>After applying the grid, I got to styling the 3 primary sections with CSS. The nav the header and the
+                    main. as I messed around with the rounded corners I settled on a rounded box as the main content
+                    with the nav and the header having the same background. to make this work I made the box scrollable,
+                    so it was like its own little main content island. and of course, with this I had to make sure that
+                    the scrollbar was correctly styled.</p>
+                <p>After I was decently happy with the desktop home page I begun the mobile optimisation phase. This
+                    started with having the grid area be single file and the navbar pushed out of existence. This part
+                    was particularly painful as creating and moving the hamburger icon around proved to be a massive
+                    pain, but I got it done in the end. The next issue was then making sure that the nav bar appeared
+                    and disappeared on hamburger click.</p>
+                <p>I could not get the nav to appear and disappear using just CSS for the life of me, so I had to resort
+                    to using JS to run a function that switched the style header. After a few days of trial and error I
+                    was able to ger that up and running with as few lines as possible. As a bonus of discovering the
+                    power of JS I was also able to implement a dark and light theme transition on the nav bar. This was
+                    possible because of my previous use of colour variables I only needed to link a style sheet with the
+                    light version of my colours which allowed me to make the switch seamlessly.</p>
+                <p>Next was the animating part of the nav bar in the mobile view. I wanted it to swing out on press and
+                    retract. Witch proved most difficult as I had to completely redesign the way the button press worked
+                    but as a result, I was able to learn about animation curves <a
+                        href="https://m3.material.io/styles/motion/easing-and-duration/tokens-specs">(https://m3.material.io/styles/motion/easing-and-duration/tokens-specs)</a>
+                    and this made CSS animations
+                    clear to me. So, I was able to make the swinging navbar in mobile view and animate the transition of
+                    light and dark mode. I was also able to give the navbar a background in the mobile view to make it
+                    look like a sliding card. And make the links phase in as the mouse hovered over it.</p>
+                <p>The next issue I addressed was the content and its scaling. This was an issue as the content did not
+                    scale well when shrunk into mobile view or expanded across 2 desktops. I aimed to make sure that the
+                    content was standardised across all page views, so I had to create an invisible content div inside
+                    the main div this was the main constrictor of the content and made sure that it scaled evenly across
+                    window sizes. This turned out to be a good idea as it helped massively in the project page where I
+                    altered the gird to have multiple scrollable cards in the main div which all needed to scale
+                    correctly. Making sure that the paddings and margins resized according to the window.</p>
+
+                <p></p>
+
+                <p2>CSS validation</p2>
+
+
+                <p>desktop.css</p>
+
+                <img src="images/desktop.png" alt="">
+
+                <p>fonts-and-colours.css</p>
+
+                <img src="images/fonts.png" alt="">
+
+                <p>main.css</p>
+
+                <img src="images/main.png" alt="">
+
+                <p>mobile.css</p>
+
+                <img src="images/mobile.png" alt="">
+
+                <p>“Property translate doesn't exist : -400” negative translates are used to move elements in the
+                    opposite direction
+                    <a
+                        href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/translate">(https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/translate)</a>
+                </p>
+
+                <p>project.css</p>
+
+                <img src="images/project.png" alt="">
+
+                <p>light.css</p>
+
+                <img src="images/light.png" alt="">
+
+                <p>dark.css</p>
+
+                <img src="images/dark.png" alt="">
+
+                <p></p>
+            </div>
+
+        </main>
+
+
+
+
+    </div>
+</body>
+
+</html>
