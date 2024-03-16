@@ -8,6 +8,7 @@
   grid-template-columns: 0.3fr 1.7fr;
   grid-template-rows: 0.3fr 1.7fr 1fr; 
   gap: 0px 0px; 
+
 }
 header { grid-area: 1 / 1 / 2 / 3; }
 nav { grid-area: 2 / 1 / 4 / 2; }
@@ -21,6 +22,7 @@ header {
   color: var(--md-sys-color-primary);
   justify-content: center;
   padding-left: 40px;
+
  }
 
 nav { 
@@ -31,7 +33,7 @@ nav {
   font-size: 20px;
   padding-left: 30px;
   gap: 2em;
-
+  transition: 0.5s cubic-bezier(0.2, 0.0, 0, 1.0);
 }
 
 main { 

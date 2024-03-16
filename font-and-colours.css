@@ -20,6 +20,7 @@
 
 
 body {
+    transition: 0.5s cubic-bezier(0.2, 0.0, 0, 1.0);
     /*background-color: var(-md-sys-color-background);*/
     background-color: var(--md-sys-color-surface-container);
     color: var(--md-sys-color-on-background);
@@ -28,19 +29,21 @@ body {
     transition: 0.5s cubic-bezier(0.2, 0.0, 0, 1.0);
 }
 
-
-  header { 
+header { 
     background-color: var(--md-sys-color-surface-container);
     color: var(--md-sys-color-primary);
     transition: 0.5s cubic-bezier(0.2, 0.0, 0, 1.0);
-   }
+    
+  }
   
-  nav { 
+nav { 
     background-color: var(--md-sys-color-surface-container);
+   
+    
   }
   
-  main { 
+main { 
     background-color: var(--md-sys-color-background);
-  }
+}
 
-  
+

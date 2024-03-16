@@ -8,14 +8,11 @@ a {
   text-decoration: none;
   color: var(--md-sys-color-on-background);
   /* allows link text to trasistion to a different colour on hover  */
-  -moz-transition: all .1.5s ease-in;
-  -o-transition: all .1.5s ease-in;
-  -webkit-transition: all .1.5s ease-in;
-  transition: all .1.5s ease-in;
 }
 /* changes colour of link text on hover  */
 a:hover {
   color: var(--md-sys-color-surface-tint);
+  transition: 0.5s cubic-bezier(0.2, 0.0, 0, 1.0);
 }
 
 
@@ -53,9 +50,6 @@ div#content.content{
   max-width: 980px;
   justify-content: center;
   position: relative;
-  padding: -10px;
-  margin: -10;
   margin: auto;
-  padding: auto;
   overflow-x: hidden;
 }
