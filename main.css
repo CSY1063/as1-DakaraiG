@@ -2,11 +2,7 @@ body {
   overflow-x: hidden;
 }
 
-p {
-  float: left;
-  width: 100%;
-  padding: 10px;
-}
+
 
 a {
   text-decoration: none;
@@ -33,4 +29,33 @@ html, body , .container {
 
 .container * {
   position: relative;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  overflow: hidden;
+ 
+  border-radius: 25px;
+}
+
+
+::-webkit-scrollbar-thumb {
+  background: var(--md-sys-color-primary);
+  border-radius: 25px;
+  overflow: hidden;
+}
+
+
+
+div#content.content{
+  display: flex;
+  flex-direction: column;
+  max-width: 980px;
+  justify-content: center;
+  position: relative;
+  padding: -10px;
+  margin: -10;
+  margin: auto;
+  padding: auto;
+  overflow-x: hidden;
 }
