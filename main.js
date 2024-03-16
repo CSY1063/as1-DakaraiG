@@ -1,13 +1,4 @@
 function ShowNav(){
-  // var nav = document.getElementById("nav");
-  // var bg = document.getElementById("navbg");
-  // if (nav.style.display != "flex") {
-  //   nav.style.display = "flex";
-  //   bg.style.display = "block";
-  // } else {
-  //   nav.style.display = "none";
-  //   bg.style.display = "none";
-  // }
   document.querySelector('.nav')
     .classList.toggle('closed');
   document.querySelector(".navbg")
